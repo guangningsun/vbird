@@ -77,7 +77,32 @@ cat [ -AbEnTv]
 6. -v : 列一些特殊字符
 
 > 生产示例 -A查看是否有^M
+
 * 反向列示 tac 就是cat命令的反向
 
 * 添加行号打印 nl 与cat -n命令类似
 
+* 翻页查看命令 more,less
+
+* 数据选取 head
+
+```
+head -n file
+
+head -n 10 file
+head -n -100 file 列出最后100行以前的所有数据
+```
+* tail 选出后面几行数据
+
+```
+tail -n 20 file
+tail -n +100 file 列出100行以后的所有数据
+tail -f file
+```
+* 非纯文本文件处理 od
+
+```
+od -t TYPE file
+```
+> TYPE 包括c ASCII, d 十进制, o 八进制， f 浮点数，x 十六进制
+ 
