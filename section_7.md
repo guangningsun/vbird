@@ -18,7 +18,7 @@ ls [-aAdfFhilnrRSt]
 9. --full-time: 完整的最后修改时间
 10. --time {ctime,atime}： 输出访问时间或改变权限时间ctime 而非内容改变时间
 
-#### 复制、删除和移动： cp，rm，mv
+#### 复制、删除和移动： cp,rm,mv
 
 * 复制文件命令如下, 要熟记含义
 
@@ -37,6 +37,5 @@ cp [-adfilprsu] source destination
 9. -u : 相当于update destination
 
 * 但拷贝时若当前的账户没有权限对所拷贝的文件进行更改时，则-a参数是无效的
-```
-生产上，使用个人账户对mysql的数据进行备份和库数据迁移动作时，无法将mysql数据的属组同时copy过来，仍需要手工修改就是这个道理
-```
+
+* 生产上，使用个人账户对mysql的数据进行备份和库数据迁移动作时，无法将mysql数据的属组同时copy过来，仍需要手工修改就是这个道理
