@@ -53,3 +53,11 @@ cp [-adfilprsu] source destination
 ```
 rm [-fir] path
 ```
+
+* 移动文件或目录 mv
+
+```
+mv [-fiu] source destination
+```
+
+1. -u : update
